@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Moncem support." />
+  <title>Support - Moncem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,650;9..144,760&family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    .support {
+      width: min(980px, calc(100% - 36px));
+      margin: 72px auto;
+    }
+    .support-hero {
+      padding: 42px;
+      border-radius: 34px;
+      color: white;
+      background:
+        radial-gradient(circle at 90% 8%, rgba(24, 140, 97, 0.42), transparent 260px),
+        var(--ink);
+    }
+    .support-hero .eyebrow { color: #bfeede; }
+    .support-hero h1 {
+      max-width: 680px;
+      margin-top: 14px;
+      font: 760 clamp(44px, 7vw, 74px)/0.94 var(--display);
+      letter-spacing: -0.055em;
+    }
+    .support-hero p {
+      max-width: 650px;
+      margin-top: 18px;
+      color: rgba(255,255,255,.72);
+      line-height: 1.7;
+    }
+    .support-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .support-card {
+      min-height: 220px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: white;
+    }
+    .support-card h2 {
+      margin-top: 42px;
+      font: 650 28px/1.04 var(--display);
+      letter-spacing: -0.04em;
+    }
+    .support-card p {
+      margin-top: 12px;
+      color: var(--slate);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+    @media (max-width: 800px) {
+      .support-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="Moncem home">
+      <span class="brand-mark">M</span>
+      <span>MONCEM</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="./privacy.html">Privacy</a>
+      <a href="mailto:beta@moncem.space" class="nav-cta">Join beta</a>
+    </nav>
+  </header>
+
+  <main class="support">
+    <section class="support-hero">
+      <p class="eyebrow">Support / beta</p>
+      <h1>Need help with Moncem?</h1>
+      <p>For beta support, bug reports, account deletion help, or privacy questions, email the right inbox below. We keep support simple and human while the product is still young.</p>
+    </section>
+
+    <section class="support-grid">
+      <article class="support-card">
+        <p class="micro">Product support</p>
+        <h2>Something broke?</h2>
+        <p>Email <a href="mailto:support@moncem.space">support@moncem.space</a> with your device, build number, and what you expected to happen.</p>
+      </article>
+      <article class="support-card">
+        <p class="micro">Privacy</p>
+        <h2>Data questions?</h2>
+        <p>Email <a href="mailto:privacy@moncem.space">privacy@moncem.space</a> for privacy questions, export help, or account deletion support.</p>
+      </article>
+      <article class="support-card">
+        <p class="micro">Beta access</p>
+        <h2>Want in?</h2>
+        <p>Email <a href="mailto:beta@moncem.space">beta@moncem.space</a> with one sentence about what you are building.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
